@@ -36,5 +36,8 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 	# you can go visit the url and create a pull request
 
+	# now go to: https://github.com/divergent3d/daps-data-vault
+	# and clone it, changes that you will make here is similar to the steps provided above
+
 
 git@github.com:johnsonwei3d/git-playground.git
