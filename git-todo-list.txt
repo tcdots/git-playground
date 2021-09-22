@@ -1,0 +1,40 @@
+[install]
+# git
+https://gitforwindows.org
+
+# putty
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html 
+
+[sequence]
+1. setup env variables (wherever git.exe is located) in system variables, not users.
+
+2. generate ssh keys via putty
+
+3. typical git sequence
+	
+	# If project does not exist in your directory, then clone repo
+	git clone <ssh link>
+
+	# Checkout a new branch, by convention, name the branch related to a feature that you're adding
+	git branch -b <branch name>
+
+	# when making changes to code/file, all changes made will be marked on git
+	# after making changes do the command:
+	git status
+
+	# additionally, we need to add changes to the repo
+	git add <file name>
+
+		# alternatively, we can add everything from our current repo, but this is a lazy way of doing things
+		git add .
+
+	# we need to 'commit' our changes to finalize our actions
+	git commit -m "brief descriptive msg"
+
+	# final step to push onto branch, the '-u' stands for 'set upstream'
+	git push -u origin <branch name>
+
+	# you can go visit the url and create a pull request
+
+
+git@github.com:johnsonwei3d/git-playground.git
